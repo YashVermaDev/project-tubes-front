@@ -2,16 +2,9 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}', 'node_modules/preline/dist/*.js'],
   theme: {
-    colors: {
-      blue: '#153457',
-      white: '#fff',
-      gray: '#efefef',
-
-    },
-    fontFamily: {
-      sans: ['Work Sans, sans-serif']
-    },
     extend: {
+  
+ 
       colors: {
         'custom-primary': '#153457',
         'custom-primary-light': '#00FFFF',
@@ -19,7 +12,8 @@ module.exports = {
         'custom-secondary-dark': '#BFBFBF',
         'custom-secondary-light': 'rgba(21,52,87,.1)',
         'custom-warning': '#FA1900',
-        'custom-lightblue': '#049dec'
+        'custom-lightblue': '#049dec',
+        'custom-gray': '#efefef'
       },
       fontFamily: {
         'custom-sans':

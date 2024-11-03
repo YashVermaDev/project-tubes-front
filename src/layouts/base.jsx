@@ -1,6 +1,12 @@
-export default function base() {
+import "../styles/main.css";
+import { useLocation, Link } from "react-router-dom";
+import Button from "../components/Button";
+
+export default function Base() {
+  const location = useLocation()
   return (
     <>
+
       <div id="container" className="flex min-h-screen">
         <aside className="w-[20%] bg-white px-2  border-r">
           <div className="logo w-full mb-4">
@@ -28,11 +34,14 @@ export default function base() {
                         type="text"
                         name="searchBar"
                         placeholder="Search "
-                        className=" text-md w-full border border-1 rounded-sm rounded-e-none py-3 px-2 py-2 ps-4 pe-[40px] "
+                        className=" text-md w-full border border-1 rounded-sm rounded-e-none py-3 px-2 ps-4 pe-[40px] "
                       />
                       <button
                         type="submit"
-                        onSubmit="search()"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          console.log('Button clicked!', e);
+                        }}
                         className="inline-flex content-center items-center border border-1 border-l-0 rounded-sm rounded-s-none px-4 hover:bg-blue hover:text-white"
                       >
                         <i className="inline-block w-[20px]">
@@ -59,12 +68,14 @@ export default function base() {
                 </div>
               </div>
             </div>
-          </header>
+          </header >
           <div id="content">
             <div className="w-full">
               <header className=" bg-gray">
                 <h1 className="text-xl !me-0">hello world</h1>
               </header>
+              <Link to="/login" className="btn btn-primary">login</Link>
+
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum alias quas maiores
                 atque minima aspernatur optio rem minus, a eaque.
@@ -83,8 +94,8 @@ export default function base() {
               </div>
             </div>
           </div>
-        </main>
-      </div>
+        </main >
+      </div >
     </>
   )
 }

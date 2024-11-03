@@ -1,6 +1,7 @@
-const button = ({ type, value, classes = '' }) => {
+const button = ({ type, value, className = '', onClick }) => {
+
     return (
-        <button type={type} className={"px-2 py-3 border rounded-sm bg-blue-500 min-w-[100px] uppercase text-xs font-bold hover:bg-black" + classes}>{value}</button>
+        <button type={type} className={`btn  ${className}`} onClick={onClick}>{value}</button>
     )
 }
 

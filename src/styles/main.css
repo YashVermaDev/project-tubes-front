@@ -1,8 +1,8 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
-@import "tailwindcss/tailwind";
+/* @import "tailwindcss/tailwind"; */
 
 .container {
   @apply max-w-screen-xl mx-auto px-4;
@@ -15,4 +15,11 @@ h1 {
 
 .shadow1 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+}
+
+.btn {
+ @apply px-2 py-3 border rounded-[2px] inline-block text-center !shadow-none bg-custom-primary min-w-[100px] uppercase text-xs font-bold border-none !outline-none ;
+}
+.btn-primary{
+  @apply bg-custom-primary text-white hover:text-custom-primary hover:bg-custom-primary-light ;
 }
