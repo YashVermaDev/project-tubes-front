@@ -1,7 +1,7 @@
-import Layouts from "./layouts/base.jsx";
+import Layouts from "./layouts/index";
 
-// function App() {
-//   return <Layouts />;
-// }
+function App() {
+    return <Layouts />;
+}
 
 export default App;

@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client'
 import { StrictMode } from 'react'
 import Router from './router/index.jsx'
 import { RouterProvider } from "react-router-dom";
+import "./styles/main.css";
 
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("app")).render(
   <StrictMode>
     <RouterProvider router={Router} />
   </StrictMode>
