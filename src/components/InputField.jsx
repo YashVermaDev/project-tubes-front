@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types'
 
 const InputField = ({ label, name, type, className = '' }) => {
+
     return (
         <>
             <div className={`flex flex-col mb-5`}>
@@ -11,5 +13,11 @@ const InputField = ({ label, name, type, className = '' }) => {
         </>
     );
 };
+InputField.propTypes = {
+    label: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    className: PropTypes.string,
+}
 
 export default InputField;

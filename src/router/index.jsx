@@ -2,13 +2,13 @@ import App from '../App';
 import { createBrowserRouter } from "react-router-dom";
 import React from 'react';
 import { Suspense } from 'react';
-
+import Spinner from '../components/Spinner.jsx';
 
 // Common Suspense Wrapper Component
 const lazyLoad = (importElement) => {
   const LazyComponent = React.lazy(importElement);
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Spinner />}>
       <LazyComponent />
     </Suspense>
   );

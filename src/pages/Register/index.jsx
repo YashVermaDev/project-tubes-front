@@ -33,29 +33,18 @@ const Register = function () {
 
                             {/* <!-- Form --> */}
                             <form onSubmit={(e) => { e.preventDefault(); register() }}>
-                                {/* <!-- Form Group --> */}
-                                <div>
+                                <div className="form-group">
                                     <InputField name="email" type="email" label="Email address" />
                                     <p className="hidden text-xs text-red-600 mt-2" id="email-error">Please include a valid email address so we can get back to you</p>
                                 </div>
-                                {/* <!-- End Form Group --> */}
-
-                                {/* <!-- Form Group --> */}
-                                <div>
+                                <div className="form-group">
                                     <InputField name="password" type="password" label="password" />
                                     <p className="hidden text-xs text-red-600 mt-2" id="password-error">8+ characters required</p>
                                 </div>
-                                {/* <!-- End Form Group --> */}
-
-                                {/* <!-- Form Group --> */}
-                                <div>
+                                <div className="form-group">
                                     <InputField name="password" type="password" label="confirm password" />
                                     <p className="hidden text-xs text-red-600 mt-2" id="confirm-password-error">Password does not match the password</p>
                                 </div>
-                                {/* <!-- End Form Group --> */}
-
-
-
                                 <button type="submit" className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-sm border border-transparent bg-custom-primary text-white hover:bg-custom-primary-light focus:outline-none disabled:opacity-50 disabled:pointer-events-none">Sign up</button>
                             </form>
                             {/* <!-- End Form --> */}
