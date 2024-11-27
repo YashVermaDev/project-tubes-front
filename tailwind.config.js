@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}', 'node_modules/preline/dist/*.js'],
-  theme: {
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}', 
+    'node_modules/preline/dist/*.js'],
+    theme: {
     extend: {
-  
- 
       colors: {
         'custom-primary': '#153457',
         'custom-primary-light': '#00FFFF',
@@ -30,5 +29,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require('preline/plugin')]
+  plugins: [ require('preline/plugin') ]
 }
