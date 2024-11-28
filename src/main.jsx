@@ -4,7 +4,9 @@ import { StrictMode } from 'react'
 import Router from './router/index.jsx'
 import { RouterProvider } from "react-router-dom";
 import "./styles/main.css";
+import axios from 'axios';
 
+axios.defaults.baseURL = "https://project-tubes.onrender.com/"
 
 ReactDOM.createRoot(document.getElementById("app")).render(
   <StrictMode>
