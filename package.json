@@ -1,4 +1,5 @@
 {
+  "homepage": "surajgoswami98.github.io/project-tubes",
   "name": "project-tubes-ui",
   "private": true,
   "version": "0.0.0",
@@ -7,12 +8,15 @@
     "dev": "vite --port=3000",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@preline/dropdown": "^2.4.1",
     "axios": "^1.7.7",
+    "gh-pages": "^6.2.0",
     "preline": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
